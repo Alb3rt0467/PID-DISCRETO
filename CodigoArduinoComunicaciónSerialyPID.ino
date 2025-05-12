@@ -97,7 +97,7 @@ void loop() {
     }
 
     if (pidActive) {
-        double error = setpoint - 0.4 - filteredInput;
+        double error = setpoint  - filteredInput;
 
         
         if (error > 25) error = 25;
